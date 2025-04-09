@@ -1,0 +1,224 @@
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .logo i {
+    margin-left: 8px;
+    color: #000;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .icons i,
+  .logout-btn {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .icons i:hover,
+  .logout-btn:hover {
+    color: #555;
+  }
+  
+  .logout-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+  }
+  
+  body.dark-mode .logo,
+  body.dark-mode .icons i,
+  body.dark-mode .logout-btn {
+    color: #fff;
+  }
+  
+  body.dark-mode .search-bar input {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  /* Main Layout */
+.main-content {
+    display: flex;
+    padding: 20px;
+  }
+  
+  /* Aside Filter Section */
+  .filter-section {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 70px); /* Adjust according to navbar height */
+    box-sizing: border-box;
+  }
+  
+  .filter-section h3 {
+    margin-top: 0;
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  /* Product Section */
+  .product-section {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  /* Product Card Example (optional) */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    text-align: center;
+  }
+  
+  /* Dark Mode for aside/product */
+  body.dark-mode .filter-section {
+    background-color: #1f1f1f;
+    border-color: #333;
+  }
+  
+  body.dark-mode .product-card {
+    background-color: #2c2c2c;
+    color: #fff;
+    border-color: #444;
+  }
+/* Card Buttons */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .view-btn {
+    padding: 6px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .favorite-icon {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .favorite-icon.favorited {
+    color: red;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .modal-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Dark mode modal */
+  body.dark-mode .modal {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  body.dark-mode .modal p {
+    color: #ccc;
+  }
+    
+  .favorite-icon.favorited {
+    color: red;
+  }
+  

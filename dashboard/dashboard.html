@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Shoply</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/a2b0f4f95f.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="logo">
+        Shoply <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+  
+      <div class="search-bar">
+        <input type="text" placeholder="Search product">
+        <input type="number" placeholder="Min price">
+        <input type="number" placeholder="Max price">
+      </div>
+  
+      <div class="icons">
+        <i class="fa-solid fa-heart" title="Liked"></i>
+        <i id="theme-toggle" class="fa-solid fa-moon" title="Toggle dark mode" onclick="toggleDarkMode()"></i>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  
+    <!-- Main Layout -->
+    <div class="main-content">
+      <!-- Aside Filter Section -->
+      <aside class="filter-section">
+        <h3>Filters</h3>
+        <label><input type="checkbox" value="electronics"> Electronics</label><br>
+        <label><input type="checkbox" value="jewelery"> Jewelery</label><br>
+        <label><input type="checkbox" value="men's clothing"> Men's Clothing</label><br>
+        <label><input type="checkbox" value="women's clothing"> Women's Clothing</label><br>
+      </aside>
+      
+  
+      <!-- Product Display Section -->
+      <section class="product-section" id="product-container">
+        <!-- API-fetched data will be inserted here -->
+         
+      </section>
+    </div>
+  
+    <script src="./app.js"></script>
+  </body>
+  
+</html>

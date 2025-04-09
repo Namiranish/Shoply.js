@@ -22,7 +22,7 @@ if (document.getElementById("login-form")) {
 
     if (savedUser && username === savedUser.username && password === savedUser.password) {
       alert("Login successful!");
-      window.location.href = "dashboard/dashboard.html"; // ✅ Redirect to dashboard page
+      window.location.href = "dashboard/dashboard.html";
     } else {
       alert("Invalid credentials!");
     }

@@ -1,7 +1,7 @@
 #login {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f8f8f8; /* light grey background */
+    background: #f8f8f8; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
   }
   
   .form-container {
-    background: #ffffff; /* white form background */
+    background: #ffffff; 
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);

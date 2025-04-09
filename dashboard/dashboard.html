@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Shoply</title>
   <link rel="stylesheet" href="../styles.css">
   <script src="https://kit.fontawesome.com/a2b0f4f95f.js" crossorigin="anonymous"></script>
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Dashboard</title>
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -23,32 +22,26 @@
       </div>
   
       <div class="icons">
-        <i class="fa-solid fa-heart" title="Liked"></i>
+        <i class="fa-solid fa-heart" title="Liked" id="fav-like" onclick="showLikedProducts()"></i>
         <i id="theme-toggle" class="fa-solid fa-moon" title="Toggle dark mode" onclick="toggleDarkMode()"></i>
         <button class="logout-btn" onclick="logout()">Logout</button>
       </div>
     </div>
   
-    <!-- Main Layout -->
     <div class="main-content">
-      <!-- Aside Filter Section -->
       <aside class="filter-section">
         <h3>Filters</h3>
-        <label><input type="checkbox" value="electronics"> Electronics</label><br>
-        <label><input type="checkbox" value="jewelery"> Jewelery</label><br>
-        <label><input type="checkbox" value="men's clothing"> Men's Clothing</label><br>
-        <label><input type="checkbox" value="women's clothing"> Women's Clothing</label><br>
+        <div class="filter-group">
+          <label><input type="checkbox" value="electronics"> Electronics</label>
+          <label><input type="checkbox" value="jewelery"> Jewelery</label>
+          <label><input type="checkbox" value="men's clothing"> Men's Clothing</label>
+          <label><input type="checkbox" value="women's clothing"> Women's Clothing</label>
+        </div>
       </aside>
       
-  
-      <!-- Product Display Section -->
-      <section class="product-section" id="product-container">
-        <!-- API-fetched data will be inserted here -->
-         
-      </section>
+      <section class="product-section" id="product-container"></section>
     </div>
   
     <script src="./app.js"></script>
-  </body>
-  
+</body>
 </html>
